@@ -95,7 +95,18 @@ export default function subtract(x, y) {
 }
 
 
-
+const makeServerRequest = new Promise((resolve, reject) => {
+  // responseFromServer represents a response from a server
+  let responseFromServer = true;
+    
+  if(responseFromServer) {
+    resolve("We got the data")
+    // Change this line
+  } else {  
+    reject("Data not received")
+    // Change this line
+  }
+});
 
 
 
