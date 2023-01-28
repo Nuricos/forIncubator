@@ -301,9 +301,27 @@ function likes (names) {
   }
   }
 
+function isIsogram(str){
+    var i, j;
+    str = str.toLowerCase();
+    for(i = 0; i < str.length; ++i) {
+      for(j = i + 1; j < str.length; ++j) {
+        if(str[i] === str[j]) {
+          return false;
+        }
+      }
+    }
+    return true;
+ }
+  console.log(isIsogram('aba'));
 
-
-
+function tribonacci(signature, n) {
+    for(let i = 0; i < n -3; i++) {
+    signature.push(signature.slice(i) .reduce(( a , b) => a + b),);
+    }
+    return signature.slice(0, n);
+    }
+console.log(tribonacci([1,2,3], 10));  
 
 
 
