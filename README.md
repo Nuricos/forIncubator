@@ -265,7 +265,9 @@ let favWord = "favorite";
 let favRegex = /favou?rite/; // Change this line
 let result = favRegex.test(favWord);
 
-
+let sampleWord = "astronaut";
+let pwRegex = /(?=\w{6})(?=\w*\d{2})/; // Change this line
+let result = pwRegex.test(sampleWord);
 
 
 
