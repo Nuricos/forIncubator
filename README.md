@@ -339,7 +339,9 @@ function spinWords(string){
   }
   console.log(spinWords( "Hey fellow warriors" ));
 
-
+function descendingOrder(n){
+    return Number(n.toString().split('').sort((a,b)=> b-a).join(''));
+    }
 
 
 
