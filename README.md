@@ -347,4 +347,40 @@ function openOrSenior(data) {
     return  data.map(x => { if(x[0] >= 55 && x[1] > 7){return "Senior";}else{return "Open";} });
 }
 
+function persistence(num) {
+   let counter = 0;
+
+   let digits = String(num).split('');
+
+   while(digits.length > 1) {
+
+    let result = 1;
+    for(let i =0; i < digits.length; i++) {
+        result = result * digits[i];
+    }
+
+    digits = String(result).split('');
+    counter++;
+   }
+   return counter;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
