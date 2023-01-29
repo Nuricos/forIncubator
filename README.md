@@ -323,7 +323,21 @@ function tribonacci(signature, n) {
     }
 console.log(tribonacci([1,2,3], 10));  
 
+function spinWords(string){
+    let res = '';
+    let result = string.split(' ');
 
+    for(let i = 0; i < result.length; i++) {
+        if(res)  res += ' ';
+            if(result[i].length > 5) {
+                 res += result[i].split('').reverse().join('');
+            } else {
+                res += result[i];
+            }                  
+    }
+    return res; 
+  }
+  console.log(spinWords( "Hey fellow warriors" ));
 
 
 
