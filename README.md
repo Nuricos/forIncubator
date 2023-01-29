@@ -343,6 +343,8 @@ function descendingOrder(n){
     return Number(n.toString().split('').sort((a,b)=> b-a).join(''));
     }
 
-
+function openOrSenior(data) { 
+    return  data.map(x => { if(x[0] >= 55 && x[1] > 7){return "Senior";}else{return "Open";} });
+}
 
 
