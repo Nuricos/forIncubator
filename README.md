@@ -369,7 +369,10 @@ function validatePIN(str) {
     return (/^[0-9]{4}$|^[0-9]{6}$/).test(str);
   }
 
-
+function solution(str, ending){
+    // TODO: complete
+    return str.indexOf(ending, str.length - ending.length) !== -1;
+  }
 
 
 
