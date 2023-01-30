@@ -520,3 +520,15 @@ console.log(`Sum of array values is: ${arraySum}`);
 
 <div class="balls" id="ball1"></div>
 <div class="balls" id="ball2"></div>
+
+<img src="doingKarateWow.jpeg" alt="Camper Cat is doing karate">
+
+
+
+
+
+
+
+
+
+
