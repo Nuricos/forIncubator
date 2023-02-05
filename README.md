@@ -644,7 +644,22 @@ function func(str) {
     return result;
 }
 
+function rowSumOddNumbers(n) {
+    let oddNumbers = [];
+    let startNumber = (n * n) - (n - 1);
 
+    while(n > 0) {
+        oddNumbers.push(startNumber);
+        startNumber += 2;
+        n--;
+        console.log(oddNumbers);
+    }
+
+    let sum = oddNumbers.reduce((a,b) => a + b, 0);
+    return sum;
+}
+
+console.log(rowSumOddNumbers(8));
 
 
 
