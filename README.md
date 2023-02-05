@@ -623,7 +623,10 @@ console.log(`Sum of array values is: ${arraySum}`);
   <div class="item5">5</div>
 </div>
 
-
+function isPangram(str){
+    let regex = /([a-z])(?!.*\1)/gi;
+    return (str.match(regex) || []).length === 26;
+}
 
 
 
