@@ -628,7 +628,21 @@ function isPangram(str){
     return (str.match(regex) || []).length === 26;
 }
 
-
+function func(str) {
+    let result = 0;
+    let obj = {};
+    str.toLowerCase().split('').map(elem=>{
+        if(!obj.hasOwnProperty(elem)) {
+            obj[elem] = 0;
+        } else {
+            if(obj[elem] === 0) {
+                result += 1;
+            }
+            obj[elem] = obj[elem] + 1;
+        }
+    });
+    return result;
+}
 
 
 
