@@ -674,5 +674,19 @@ newArr.push([...arr]);
 
 console.log(copyMachine([true, false, true], 2));
 
+function solution(string) {
+    let newString = '';
+    let res = string.split('');
 
+    res.map(function(e) {
+      if(e == e.toUpperCase()) {
+        newString += ' ';
+        newString += e;
+      } else {
+        newString += e;
+      }
+    });
+    return newString;
+}
+console.log(solution("camelCasingTest"));
 
